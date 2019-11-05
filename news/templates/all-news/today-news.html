@@ -11,6 +11,10 @@
     <div class="col-md-6">
       <h2 class="text-center">{{ news_item.title }}</h2>
     </div>
+    <!-- displaying news article images -->
+    <div class="col-md-6">
+      <img src="{{ news_item.article_image.url }}" alt="image" class="img-responsive" height="200px" width="200px">
+    </div>
   </div>
   {% empty %}
   <div class="row">
